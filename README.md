@@ -78,3 +78,34 @@ Start → Measure Distance →
     If > 100 cm → Green ON
     If 50–100 cm → Yellow ON + Slow Buzzer
     If ≤ 30 cm → Red ON + Flash LED + Fast Buzzer
+
+
+🚀 Getting Started
+Upload the code to your Arduino board.
+Build the circuit as shown in the circuit diagram.
+Open the Serial Monitor (Ctrl+Shift+M) at 9600 baud.
+Place your hand in front of the ultrasonic sensor and observe LED and buzzer behavior.
+
+
+
+📦 Code Summary
+Uses pulseIn() to measure ultrasonic echo time.
+Calculates distance using sound speed:
+distance = duration * 0.0343 / 2;
+Implements smoothing via a simple moving average.
+Uses delay() to control buzzer beeping speed and flash LED timing.
+
+
+
+🧩 Customization Ideas
+Adjust distance thresholds for finer detection.
+Replace the flashing LED with a strobe light or camera trigger.
+Add a GSM module to send SMS alerts.
+Add a PIR sensor for dual-sensing.
+
+
+👩‍💻 Author
+Shivani
+Project: Smart Door Alert System using Arduino
+For academic/hobby/home security use 🔐
+
